@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="only light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Betreuung Hand in Hand | Alltagshilfe in Unna</title>
 <link rel="icon" href="logo.svg" type="image/svg+xml">
@@ -12,8 +13,6 @@
 <meta name="description" content="Alltagshilfe und Betreuung zu Hause in Unna und Umgebung. Examinierte Pflegefachkraft, staatlich anerkannt, Abrechnung mit allen Pflegekassen. Türkçe de konuşuyorum.">
 <style>
 :root{--mint:#A9D9C6;--mintl:#D3ECE2;--green:#1F5A47;--text:#1C2A25;--soft:#F7F8F7;--white:#FFFFFF;--muted:#3D4A45;--line:#E3E8E5;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--mint:#2E5A4B;--mintl:#1E3A31;--green:#8FD1B5;--text:#E8F1ED;--soft:#16201C;--white:#101815;--muted:#B8C7C0;--line:#2A3833;color-scheme:dark}}
-:root[data-theme="dark"]{--mint:#2E5A4B;--mintl:#1E3A31;--green:#8FD1B5;--text:#E8F1ED;--soft:#16201C;--white:#101815;--muted:#B8C7C0;--line:#2A3833;color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.55;font-size:17px}
@@ -29,7 +28,7 @@ header .wrap{display:flex;align-items:center;gap:14px}
 .hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center}
 .hero h1{font-size:36px;line-height:1.2;margin:0 0 12px;text-wrap:balance}
 .hero p{margin:0 0 20px;font-size:18px}
-.photo{width:100%;border-radius:16px;display:block}
+.photo{width:100%;max-width:520px;height:auto;aspect-ratio:10/7;object-fit:cover;object-position:center;border-radius:16px;display:block;margin:0 auto;justify-self:center}
 .badge{display:inline-block;background:#1F5A47;color:#FFFFFF;border-radius:999px;padding:8px 18px;font-weight:700;font-size:16px;margin-bottom:22px}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-flex;align-items:center;gap:8px;min-height:50px;padding:12px 22px;border-radius:12px;font-weight:700;text-decoration:none;font-size:17px;overflow-wrap:anywhere}
@@ -55,6 +54,7 @@ h2{font-size:28px;margin:0 0 24px;text-wrap:balance}
 .check p{margin:0}
 .kontakt{background:#1F5A47;color:#FFFFFF;text-align:center}
 .kontakt h2{color:#FFFFFF}
+.kontakt p a{color:#FFFFFF;font-weight:700}
 .kontakt .btns{justify-content:center;margin-top:18px}
 .kontakt .btn.p{background:#FFFFFF;color:#1F5A47}
 footer{padding:32px 0;font-size:14px;color:var(--muted);background:var(--soft)}
